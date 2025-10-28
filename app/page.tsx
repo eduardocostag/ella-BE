@@ -8,27 +8,9 @@ export default function Home() {
         <ProfileHeader />
 
         <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
-          <LinkCard
-            title="Privacy Policy"
-            description="Leia nossa política de privacidade"
-            href="/privacy"
-            icon="shield"
-          />
+          <LinkCard title="Privacy" href="/privacy" icon="shield" />
 
-          <LinkCard
-            title="OnlyFans"
-            description="Conteúdo exclusivo"
-            href="https://onlyfans.com/seu-perfil"
-            icon="star"
-            variant="accent"
-          />
-
-          <LinkCard
-            title="WhatsApp"
-            description="Entre em contato direto"
-            href="https://wa.me/5511999999999"
-            icon="message"
-          />
+          <LinkCard title="OnlyFans" href="https://onlyfans.com/seu-perfil" icon="star" variant="accent" />
 
           <LinkCard title="Telegram" href="https://t.me/seu-canal" icon="send" />
         </div>
