@@ -1,14 +1,13 @@
 import { ProfileHeader } from "@/components/profile-header"
 import { LinkCard } from "@/components/link-card"
-import { SocialLinks } from "@/components/social-links"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background py-12 px-4">
+    <main className="min-h-screen bg-background py-8 px-4 sm:py-12 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <ProfileHeader />
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
           <LinkCard
             title="Privacy Policy"
             description="Leia nossa política de privacidade"
@@ -31,24 +30,8 @@ export default function Home() {
             icon="message"
           />
 
-          <LinkCard title="Telegram" description="Junte-se ao nosso canal" href="https://t.me/seu-canal" icon="send" />
-
-          <LinkCard
-            title="Instagram"
-            description="Siga no Instagram"
-            href="https://instagram.com/seu-perfil"
-            icon="camera"
-          />
-
-          <LinkCard
-            title="Twitter / X"
-            description="Acompanhe no Twitter"
-            href="https://twitter.com/seu-perfil"
-            icon="twitter"
-          />
+          <LinkCard title="Telegram" href="https://t.me/seu-canal" icon="send" />
         </div>
-
-        <SocialLinks />
       </div>
     </main>
   )
