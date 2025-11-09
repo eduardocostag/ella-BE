@@ -9,7 +9,7 @@ export function ProfileHeader() {
       </Avatar>
 
       <div className="space-y-1.5 sm:space-y-2">
-        <h1 className="text-2xl sm:text-3xl font-bold text-balance">Ella</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-balance">Be</h1>
         <p className="text-sm sm:text-base text-muted-foreground text-pretty max-w-md px-2">all my links</p>
       </div>
     </div>

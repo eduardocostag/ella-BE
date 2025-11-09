@@ -8,11 +8,24 @@ export default function Home() {
         <ProfileHeader />
 
         <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
-          <LinkCard title="Privacy" href="/privacy" icon="shield" />
+          <LinkCard
+            title="OnlyFans"
+            href="https://onlyfans.com/bedsecret"
+            icon="star"
+            variant="accent"
+          />
 
-          <LinkCard title="OnlyFans" href="https://onlyfans.com/seu-perfil" icon="star" variant="accent" />
+          <LinkCard
+            title="Privacy"
+            href="https://privacy.com.br/checkout/secretmoon"
+            icon="shield"
+          />
 
-          <LinkCard title="Telegram" href="https://t.me/seu-canal" icon="send" />
+          {/*<LinkCard
+            title="Telegram"
+            href="https://google.com"
+            icon="send"
+          />*/}
         </div>
       </div>
     </main>
