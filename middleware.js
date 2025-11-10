@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  // Simula país Brasil para teste local
-  const country = 'BR';  // Mude para 'US' para testar acesso permitido
+  const country = request.headers.get('x-vercel-ip-country') || 'UNKNOWN';
 
   // Bloqueia visitantes do Brasil
   if (country === 'BR') {
@@ -14,5 +13,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+  matcher: '/' // Aplica a todas as rotas
 };
